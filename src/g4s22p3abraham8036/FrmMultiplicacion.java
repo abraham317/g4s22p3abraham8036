@@ -3,18 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package g4s22p4daniel8036;
+package g4s22p3abraham8036;
 
 /**
  *
  * @author danyg
  */
-public class FrmDivicion extends javax.swing.JDialog {
+public class FrmMultiplicacion extends javax.swing.JDialog {
 
     /**
-     * Creates new form FrmDivicion
+     * Creates new form FrmMultiplicacion
      */
-    public FrmDivicion(java.awt.Frame parent, boolean modal) {
+    public FrmMultiplicacion(java.awt.Frame parent, boolean modal) {
         super(parent, modal);
         initComponents();
     }
@@ -40,7 +40,7 @@ public class FrmDivicion extends javax.swing.JDialog {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
-        jLabel1.setText("Division de dos numero");
+        jLabel1.setText("Multiplicacion de dos numero");
 
         jLabel2.setText("Primer valor");
 
@@ -90,7 +90,7 @@ public class FrmDivicion extends javax.swing.JDialog {
                                 .addComponent(jLabel4)
                                 .addGap(18, 18, 18)
                                 .addComponent(txtresultado, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(129, Short.MAX_VALUE))
+                .addContainerGap(121, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -121,7 +121,7 @@ public class FrmDivicion extends javax.swing.JDialog {
 
     private void btncalcularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btncalcularActionPerformed
         // TODO add your handling code here:
-        txtresultado.setText(String.valueOf(Integer.parseInt(txtnum1.getText().toString())/Integer.parseInt(txtnum2.getText().toString())));
+        txtresultado.setText(String.valueOf(Integer.parseInt(txtnum1.getText().toString())*Integer.parseInt(txtnum2.getText().toString())));
     }//GEN-LAST:event_btncalcularActionPerformed
 
     private void btnCerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarActionPerformed
@@ -146,20 +146,20 @@ public class FrmDivicion extends javax.swing.JDialog {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(FrmDivicion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmMultiplicacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(FrmDivicion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmMultiplicacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(FrmDivicion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmMultiplicacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(FrmDivicion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(FrmMultiplicacion.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the dialog */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                FrmDivicion dialog = new FrmDivicion(new javax.swing.JFrame(), true);
+                FrmMultiplicacion dialog = new FrmMultiplicacion(new javax.swing.JFrame(), true);
                 dialog.addWindowListener(new java.awt.event.WindowAdapter() {
                     @Override
                     public void windowClosing(java.awt.event.WindowEvent e) {
